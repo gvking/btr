@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bet Tracker</h1>
+        <form id="bet-form">
+            <label for="bet-description">Bet Description:</label>
+            <input type="text" id="bet-description" placeholder="e.g., Will the stock hit $200?" required>
+
+            <label for="bet-date">End Date:</label>
+            <input type="date" id="bet-date" required>
+
+            <label for="bet-amount">Amount Bet ($):</label>
+            <input type="number" id="bet-amount" placeholder="e.g., 50" required>
+
+            <label for="phone-numbers">Phone Numbers (comma separated):</label>
+            <input type="text" id="phone-numbers" placeholder="e.g., +1234567890, +0987654321" required>
+
+            <button type="submit">Create Bet</button>
+        </form>
+        
+        <div id="output"></div>
+
+        <!-- New Button for creating another bet -->
+        <button id="new-bet-button" style="display: none;">Create Another Bet</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
