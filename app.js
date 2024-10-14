@@ -23,7 +23,7 @@ document.getElementById("bet-form").addEventListener("submit", function(event) {
     };
 
     // Send the POST request to the backend API
-    fetch('https://35.197.112.245:8080/create', {
+    fetch('http://35.197.112.245:8080/create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
